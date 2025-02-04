@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d4b342c7c3d31e50945e9e1d05013106" label="Budget" max_length="40" name="x_1040502_wbs_budget" text_index="true" type="collection">
+        <element choice="3" label="Currency" max_length="32" name="currency" reference="fx_currency" type="reference">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Total Budget" max_length="40" name="total_budget" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Actual Budget" max_length="40" name="u_actual_budget" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="April" max_length="40" name="u_april" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="August" max_length="40" name="u_august" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Budget Estimates" max_length="40" name="u_budget" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="December" max_length="40" name="u_december" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="February" max_length="40" name="u_february" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="January" max_length="40" name="u_january" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="July" max_length="40" name="u_july" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="June" max_length="40" name="u_june" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="March" max_length="40" name="u_march" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="May" max_length="40" name="u_may" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Month" max_length="40" name="u_month" type="string">
+            <choice>
+                <element inactive_on_update="false" label="January" sequence="0" value="january"/>
+                <element inactive_on_update="false" label="February" sequence="1" value="february"/>
+                <element inactive_on_update="false" label="March" sequence="2" value="march"/>
+                <element inactive_on_update="false" label="April" sequence="3" value="april"/>
+                <element inactive_on_update="false" label="May" sequence="4" value="may"/>
+                <element inactive_on_update="false" label="June" sequence="5" value="june"/>
+                <element inactive_on_update="false" label="July" sequence="6" value="july"/>
+                <element inactive_on_update="false" label="August" sequence="7" value="august"/>
+                <element inactive_on_update="false" label="September" sequence="8" value="september"/>
+                <element inactive_on_update="false" label="October" sequence="9" value="october"/>
+                <element inactive_on_update="false" label="November" sequence="10" value="november"/>
+                <element inactive_on_update="false" label="December" sequence="11" value="december"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="November" max_length="40" name="u_november" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="October" max_length="40" name="u_october" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="September" max_length="40" name="u_september" type="string"/>
+        <element attributes="omit_sys_original=true" label="Total Budget" max_length="20" name="u_total_budget" type="currency"/>
+        <element attributes="encode_utf8=false" label="WBS" max_length="32" name="u_wbs" reference="x_1040502_wbs_wbs" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Year" max_length="40" name="year" type="string"/>
+        <index name="index">
+            <element name="currency"/>
+        </index>
+        <index name="index2">
+            <element name="u_wbs"/>
+        </index>
+    </element>
+</database>

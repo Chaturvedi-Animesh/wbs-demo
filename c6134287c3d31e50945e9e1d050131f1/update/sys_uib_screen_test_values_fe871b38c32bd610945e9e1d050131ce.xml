@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+    "table": "x_1040502_wbs_wbs",
+    "sysId": "06a618fcc32b9610945e9e1d05013193",
+    "query": "",
+    "extraParams": "",
+    "views": "",
+    "selectedTab": "",
+    "029f04e053610110ac9bddeeff7b1294": {
+        "activityLogs": null,
+        "detailsContext": null,
+        "fields": null,
+        "forcedViewName": null,
+        "inputExtraParams": null,
+        "inputQuery": null,
+        "inputSysId": "06a618fcc32b9610945e9e1d05013193",
+        "inputTable": "x_1040502_wbs_wbs",
+        "isMappedToAppShell": true,
+        "screen": null,
+        "shouldSuppressGlobalEvents": true,
+        "userPrefs": null,
+        "view": "workspace-wbs-0"
+    },
+    "activityLogs": "",
+    "screen": "",
+    "fields": "",
+    "userPrefs": "",
+    "selectedTabIndex": ""
+}</macroponent_config>
+        <screen display_value="Default">72871b38c32bd610945e9e1d050131bf</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>vijay</sys_created_by>
+        <sys_created_on>2025-02-03 23:55:45</sys_created_on>
+        <sys_id>fe871b38c32bd610945e9e1d050131ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_fe871b38c32bd610945e9e1d050131ce</sys_update_name>
+        <sys_updated_by>vijay</sys_updated_by>
+        <sys_updated_on>2025-02-04 00:43:57</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

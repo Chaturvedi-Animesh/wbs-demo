@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="WBS RP">0b4263c3c3db1e50945e9e1d050131b3</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 14:23:36</sys_created_on>
+        <sys_id>e4a4e787c3db1e50945e9e1d0501317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.WBS RP</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sc_cat_item_category_e4a4e787c3db1e50945e9e1d0501317a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 14:23:36</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

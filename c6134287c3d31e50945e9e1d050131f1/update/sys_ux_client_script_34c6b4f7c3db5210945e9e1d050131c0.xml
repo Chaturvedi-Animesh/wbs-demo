@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="WBS Record Page">7c60cb57c31f5e50945e9e1d050131fa</macroponent>
+        <name>New client script 3</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+ var jan = api.data.record_1.form.fields.u_january.displayValue;
+ var feb = api.data.record_1.form.fields.u_february.displayValue;
+ var mar = api.data.record_1.form.fields.u_march.displayValue;
+ var apr = api.data.record_1.form.fields.u_april.displayValue;
+ var may = api.data.record_1.form.fields.u_may.displayValue;
+ var jun = api.data.record_1.form.fields.u_june.displayValue;
+ var jul = api.data.record_1.form.fields.u_july.displayValue;
+ var aug = api.data.record_1.form.fields.u_august.displayValue;
+ var sept = api.data.record_1.form.fields.u_september.displayValue;
+ var oct = api.data.record_1.form.fields.u_october.displayValue;
+ var nov = api.data.record_1.form.fields.u_november.displayValue;
+ var dec = api.data.record_1.form.fields.u_december.displayValue;
+ var year = api.data.record_1.form.fields.u_year.displayValue;
+ var totalB = api.data.record_1.form.fields.u_total_budget.displayValue;
+
+ var months = [jan,feb,mar,apr,may,jun,jul,aug,sept,oct,nov,dec];
+ var choices =['january','february','march', 'april','may','june', 'july','august', 'september','october','november','december'];
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 12:03:37</sys_created_on>
+        <sys_id>34c6b4f7c3db5210945e9e1d050131c0</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>New client script 3</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_ux_client_script_34c6b4f7c3db5210945e9e1d050131c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 04:36:28</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1040502_wbs_wbs</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create a Budget Record</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+var months =['u_january','u_february','u_march','u_april','u_may','u_june','u_july','u_august','u_september','u_october','u_november','u_december'];
+var choices =['january','february','march', 'april','may','june', 'july','august', 'september','october','november','december'];
+
+gs.info('BR 1 : '+current.sys_id);
+
+for(var i=0;i<months.length;i++){
+	var bud = new GlideRecord('x_1040502_wbs_budget');
+	bud.initialize();
+	bud.u_wbs = current.sys_id;
+	bud.u_total_budget = current.getValue('u_total_budget');
+	bud.u_year = current.u_year;
+	bud.u_month = choices[i];
+	bud.u_budget = current.getValue(months[i]);
+	bud.insert();
+    gs.info('BR 2 : '+bud.number);
+
+}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 09:38:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad5c88f0c32b9610945e9e1d050131ac</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Create a Budget Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_script_ad5c88f0c32b9610945e9e1d050131ac</sys_update_name>
+        <sys_updated_by>vijay</sys_updated_by>
+        <sys_updated_on>2025-02-04 04:42:10</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ad5c88f0c32b9610945e9e1d050131ac"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ad5c88f0c32b9610945e9e1d050131ac</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-03 09:38:00</sys_created_on>
+        <sys_id>0633dcb4c32b9610945e9e1d05013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-03 09:38:00</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

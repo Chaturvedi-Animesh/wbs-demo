@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_1040502_wbs.Audience for app wbs</api_name>
+        <description/>
+        <name>Audience for app wbs</name>
+        <role_names/>
+        <roles>82138287c3d31e50945e9e1d05013160,c6138287c3d31e50945e9e1d05013165</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 06:23:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80608b57c31f5e50945e9e1d050131a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app wbs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_ux_applicability_80608b57c31f5e50945e9e1d050131a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 06:23:39</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>

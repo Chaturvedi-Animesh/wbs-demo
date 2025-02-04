@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_december" label="December" language="en" table="x_1040502_wbs_wbs">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_december</element>
+            <help/>
+            <hint/>
+            <label>December</label>
+            <language>en</language>
+            <name>x_1040502_wbs_wbs</name>
+            <plural>Decembers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-03 06:53:29</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>December</sys_name>
+            <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+            <sys_update_name>sys_documentation_x_1040502_wbs_wbs_u_december_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-03 06:53:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
