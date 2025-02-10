@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Budget" section_id="e019ffe4c3a79610945e9e1d05013186" sys_domain="global" table="x_1040502_wbs_wbs" version="3" view="WBS_Budget">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_total_budget</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 11:34:01</sys_created_on>
+            <sys_id>9b57b141c3a71a10945e9e1d0501315e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 11:34:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_string_1</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 11:34:01</sys_created_on>
+            <sys_id>d757b141c3a71a10945e9e1d0501315f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 11:34:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 11:34:01</sys_created_on>
+            <sys_id>df57b141c3a71a10945e9e1d0501315f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 11:34:01</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_year</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-04 11:34:01</sys_created_on>
+            <sys_id>d757b141c3a71a10945e9e1d05013160</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-04 11:34:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Budget</caption>
+            <header>false</header>
+            <name>x_1040502_wbs_wbs</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-03 07:43:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e019ffe4c3a79610945e9e1d05013186</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1040502_wbs_wbs</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+            <sys_update_name>sys_ui_section_e019ffe4c3a79610945e9e1d05013186</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-03 07:43:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="WBS Budget" name="WBS_Budget">6819ffe4c3a79610945e9e1d05013180</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_ui_section_e019ffe4c3a79610945e9e1d05013186</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Budget" section_id="e019ffe4c3a79610945e9e1d05013186" sys_domain="global" table="x_1040502_wbs_wbs" version="3" view="WBS_Budget"><sys_ui_element action="INSERT_OR_UPDATE"><element>u_total_budget</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 11:34:01</sys_created_on><sys_id>9b57b141c3a71a10945e9e1d0501315e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 11:34:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_string_1</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 11:34:01</sys_created_on><sys_id>d757b141c3a71a10945e9e1d0501315f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 11:34:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 11:34:01</sys_created_on><sys_id>df57b141c3a71a10945e9e1d0501315f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 11:34:01</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_year</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-04 11:34:01</sys_created_on><sys_id>d757b141c3a71a10945e9e1d05013160</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-04 11:34:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Budget</caption><header>false</header><name>x_1040502_wbs_wbs</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-03 07:43:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e019ffe4c3a79610945e9e1d05013186</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1040502_wbs_wbs</sys_name><sys_overrides/><sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package><sys_policy/><sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope><sys_update_name>sys_ui_section_e019ffe4c3a79610945e9e1d05013186</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-03 07:43:45</sys_updated_on><sys_user/><title>false</title><view display_value="WBS Budget" name="WBS_Budget">6819ffe4c3a79610945e9e1d05013180</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1767630545</payload_hash>
+        <record_name>WBS</record_name>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 11:34:01</sys_created_on>
+        <sys_id>1f57b141c3a71a10945e9e1d05013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194d0bd1b730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 11:34:01</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>d357b141c8a71a10a009902b4892ff62</update_guid>
+        <update_guid_history>d357b141c8a71a10a009902b4892ff62:-1767630545,6419ffe4d6a796108f0a6efefa045ef6:-127539740</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-07 09:55:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>5d08817c41c54ce8a2d809410bb35e44</sys_id>
+        <sys_metadata>e019ffe4c3a79610945e9e1d05013186</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Budget</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent display_value="WBS">5d738a87c3d31e50945e9e1d050131cb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_ui_section_e019ffe4c3a79610945e9e1d05013186</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_e019ffe4c3a79610945e9e1d05013186">1f57b141c3a71a10945e9e1d05013162</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-07 09:55:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

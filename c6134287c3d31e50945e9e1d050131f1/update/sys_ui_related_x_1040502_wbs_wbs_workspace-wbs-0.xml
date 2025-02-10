@@ -2,59 +2,31 @@
     <sys_ui_related sys_domain="global" table="x_1040502_wbs_wbs" version="2" view="workspace-wbs-0">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="WBS - Workspace WBS 0" name="x_1040502_wbs_wbs" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">29a1a31bc3131210945e9e1d05013146</list_id>
+            <list_id display_value="WBS - Workspace WBS 0" name="x_1040502_wbs_wbs" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">45c10406c3af1e10945e9e1d05013116</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>x_1040502_wbs_budget.u_wbs</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 08:49:01</sys_created_on>
-            <sys_id>e1a1a31bc3131210945e9e1d05013148</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 08:49:01</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="WBS - Workspace WBS 0" name="x_1040502_wbs_wbs" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">29a1a31bc3131210945e9e1d05013146</list_id>
-            <order_by/>
-            <position>1</position>
-            <related_list>sysapproval_approver.sysapproval</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 08:49:01</sys_created_on>
-            <sys_id>2da1a31bc3131210945e9e1d05013148</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 08:49:01</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="WBS - Workspace WBS 0" name="x_1040502_wbs_wbs" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">29a1a31bc3131210945e9e1d05013146</list_id>
-            <order_by/>
-            <position>2</position>
-            <related_list>u_approval_history.parent</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 08:49:01</sys_created_on>
-            <sys_id>21a1a31bc3131210945e9e1d05013149</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 08:49:01</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="WBS - Workspace WBS 0" name="x_1040502_wbs_wbs" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">29a1a31bc3131210945e9e1d05013146</list_id>
-            <order_by/>
-            <position>3</position>
             <related_list>x_1040502_nsc_pe_0_approval_routing_preview.parent</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 08:49:01</sys_created_on>
-            <sys_id>25a1a31bc3131210945e9e1d05013149</sys_id>
+            <sys_created_on>2025-02-07 05:34:09</sys_created_on>
+            <sys_id>c9c10406c3af1e10945e9e1d05013117</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 08:49:01</sys_updated_on>
+            <sys_updated_on>2025-02-07 05:34:09</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="WBS - Workspace WBS 0" name="x_1040502_wbs_wbs" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">45c10406c3af1e10945e9e1d05013116</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>u_approval_history.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-07 05:34:09</sys_created_on>
+            <sys_id>c1c10406c3af1e10945e9e1d05013118</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-07 05:34:09</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>WBS - Workspace WBS 0</calculated_name>
@@ -65,10 +37,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 08:49:01</sys_created_on>
+            <sys_created_on>2025-02-07 05:34:09</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>29a1a31bc3131210945e9e1d05013146</sys_id>
+            <sys_id>45c10406c3af1e10945e9e1d05013116</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>WBS - Workspace WBS 0</sys_name>
             <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -76,7 +48,7 @@
             <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
             <sys_update_name>sys_ui_related_x_1040502_wbs_wbs_workspace-wbs-0</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 08:49:01</sys_updated_on>
+            <sys_updated_on>2025-02-07 05:34:09</sys_updated_on>
             <sys_user/>
             <view display_value="Workspace WBS 0" name="workspace-wbs-0">83504b57db1f5e5043031af713f64b79</view>
             <view_name/>

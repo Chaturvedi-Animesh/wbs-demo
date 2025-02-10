@@ -20,6 +20,10 @@
 		g_form.setReadOnly(allMonths[month],true);
 	}
    }
+
+   if(!g_form.isNewRecord){
+      g_form.setDisplay('u_total_budget',false);
+   }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -27,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>305fb2c7c31b1e50945e9e1d050131e4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Monthly Budget</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -35,7 +39,7 @@
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_script_client_305fb2c7c31b1e50945e9e1d050131e4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 14:02:09</sys_updated_on>
+        <sys_updated_on>2025-02-07 09:43:03</sys_updated_on>
         <table>x_1040502_wbs_budget</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

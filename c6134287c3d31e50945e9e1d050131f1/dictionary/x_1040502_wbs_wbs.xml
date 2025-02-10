@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="5d738a87c3d31e50945e9e1d050131cb" extends="task" label="WBS" max_length="40" name="x_1040502_wbs_wbs" text_index="true" type="collection">
-        <element label="Applicant Name" max_length="32" name="applicant_name" reference="sys_user" type="reference"/>
+    <element audit="true" db_object_id="5d738a87c3d31e50945e9e1d050131cb" extends="task" label="WBS" max_length="40" name="x_1040502_wbs_wbs" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Activity" max_length="40" name="activity" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Activity Type" max_length="40" name="activity_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Advertising Type" max_length="40" name="advertising_type" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return gs.getUserID();  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Applicant Name" max_length="32" name="applicant_name" reference="sys_user" type="reference" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Campaign" max_length="40" name="campaign" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Channel" max_length="40" name="channel" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Department" max_length="40" name="department" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Main Expense" max_length="40" name="main_expense" type="string"/>
         <element label="Next Reviewer" max_length="40" name="next_reviewer" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Product Category" max_length="40" name="product_category" type="string"/>
         <element label="Routing Level" max_length="40" name="routing_level" type="string"/>
         <element label="Submit Date &amp; Time" max_length="255" name="submit_date_time" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" audit="true" label="Sub Expense" max_length="40" name="sub_expense" type="string"/>
         <element attributes="omit_sys_original=true" label="April" max_length="20" name="u_april" type="currency"/>
         <element attributes="omit_sys_original=true" label="August" max_length="20" name="u_august" type="currency"/>
         <element attributes="omit_sys_original=true" label="December" max_length="20" name="u_december" type="currency"/>
-        <element attributes="omit_sys_original=true" label="February" max_length="20" name="u_february" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="WBS Type" max_length="40" name="u_description" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Central and Admin Expenses" sequence="0" value="central and admin expenses"/>
+                <element inactive_on_update="false" label="Investment (Asset under Construction)" sequence="0" value="investment"/>
+                <element inactive_on_update="false" label="Marketing Expenses" sequence="1" value="marketing expenses"/>
+                <element inactive_on_update="false" label="Advertising Expenses" sequence="2" value="advertising expenses"/>
+                <element inactive_on_update="false" label="General and Admin Expenses" sequence="3" value="general and admin expenses"/>
+                <element inactive_on_update="false" label="Project Sales" sequence="4" value="project sales"/>
+                <element inactive_on_update="false" label="Regional Expense" sequence="5" value="regional expense"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" audit="true" label="February" max_length="20" name="u_february" type="currency"/>
         <element attributes="omit_sys_original=true" label="January" max_length="20" name="u_january" type="currency"/>
         <element attributes="omit_sys_original=true" label="July" max_length="20" name="u_july" type="currency"/>
         <element attributes="omit_sys_original=true" label="June" max_length="20" name="u_june" type="currency"/>
         <element attributes="omit_sys_original=true" label="March" max_length="20" name="u_march" type="currency"/>
         <element attributes="omit_sys_original=true" label="May" max_length="20" name="u_may" type="currency"/>
         <element attributes="omit_sys_original=true" label="November" max_length="20" name="u_november" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Number Range" max_length="40" name="u_number_range" read_only="true" type="string"/>
         <element attributes="omit_sys_original=true" label="October" max_length="20" name="u_october" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Type" max_length="40" name="u_project_type" type="string"/>
         <element attributes="omit_sys_original=true" label="September" max_length="20" name="u_september" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_1" type="string"/>
         <element attributes="omit_sys_original=true" label="Total Budget" max_length="20" name="u_total_budget" type="currency"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Year" max_length="40" name="u_year" type="string">
             <choice>

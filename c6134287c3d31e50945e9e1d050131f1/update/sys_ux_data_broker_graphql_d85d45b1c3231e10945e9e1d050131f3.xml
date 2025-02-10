@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_1040502_wbs.UpdateReason</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>true</mutates_server_data>
+        <name>UpdateReason</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <query/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+
+gb.setMutation("updateRecord");
+qb.addArgument("input",{
+	sysID : inputs.sysID,
+	table : "x_1040502_wbs_budget",
+	values : {
+		work_notes : inputs.reason
+	}
+
+});
+qb.addField("record {sys_id}");
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-06 16:40:02</sys_created_on>
+        <sys_id>d85d45b1c3231e10945e9e1d050131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UpdateReason</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_d85d45b1c3231e10945e9e1d050131f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-06 16:40:02</sys_updated_on>
+        <type>script</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=d85d45b1c3231e10945e9e1d050131f3"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d85d45b1c3231e10945e9e1d050131f3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-06 16:40:02</sys_created_on>
+        <sys_id>59901575c3efda10945e9e1d050131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-06 16:40:02</sys_updated_on>
+        <table>sys_ux_data_broker_graphql</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

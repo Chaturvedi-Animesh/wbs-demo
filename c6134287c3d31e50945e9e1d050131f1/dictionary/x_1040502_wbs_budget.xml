@@ -5,10 +5,11 @@
         </element>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Total Budget" max_length="40" name="total_budget" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Actual Budget" max_length="40" name="u_actual_budget" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Actual Budget" max_length="40" name="u_actual_budget" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="April" max_length="40" name="u_april" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="August" max_length="40" name="u_august" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Budget Estimates" max_length="40" name="u_budget" type="string"/>
+        <element attributes="omit_sys_original=true" label="Budget Estimate" max_length="20" name="u_budget_estimate" type="currency"/>
         <element attributes="edge_encryption_enabled=true" label="December" max_length="40" name="u_december" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="February" max_length="40" name="u_february" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="January" max_length="40" name="u_january" type="string"/>
@@ -16,7 +17,7 @@
         <element attributes="edge_encryption_enabled=true" label="June" max_length="40" name="u_june" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="March" max_length="40" name="u_march" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="May" max_length="40" name="u_may" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Month" max_length="40" name="u_month" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Month" max_length="40" name="u_month" read_only="true" type="string">
             <choice>
                 <element inactive_on_update="false" label="January" sequence="0" value="january"/>
                 <element inactive_on_update="false" label="February" sequence="1" value="february"/>
@@ -36,8 +37,8 @@
         <element attributes="edge_encryption_enabled=true" label="October" max_length="40" name="u_october" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="September" max_length="40" name="u_september" type="string"/>
         <element attributes="omit_sys_original=true" label="Total Budget" max_length="20" name="u_total_budget" type="currency"/>
-        <element attributes="encode_utf8=false" label="WBS" max_length="32" name="u_wbs" reference="x_1040502_wbs_wbs" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Year" max_length="40" name="year" type="string"/>
+        <element attributes="encode_utf8=false" label="WBS" max_length="32" name="u_wbs" reference="x_1040502_wbs_wbs" reference_floats="true" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Year" max_length="40" name="year" read_only="true" type="string"/>
         <index name="index">
             <element name="currency"/>
         </index>

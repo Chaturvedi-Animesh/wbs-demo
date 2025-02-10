@@ -23,6 +23,7 @@ console.log('entered');
    label:record.code.displayValue
  }));
  api.setState('dropValue',drop);
+ console.log('WBS CS 1'+api.state.wbsNumber);
 
  var currentMonth = new Date().getMonth();
     var allMonths = {
@@ -53,14 +54,14 @@ console.log('entered');
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-31 10:22:43</sys_created_on>
         <sys_id>70c6b4f7c3db5210945e9e1d050131c0</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>New client script 1</sys_name>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_ux_client_script_70c6b4f7c3db5210945e9e1d050131c0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-02 06:13:23</sys_updated_on>
+        <sys_updated_on>2025-02-04 10:56:16</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

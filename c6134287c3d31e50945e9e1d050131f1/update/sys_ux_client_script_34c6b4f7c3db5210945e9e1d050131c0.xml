@@ -14,6 +14,7 @@
 * @param {ApiHelpers} params.helpers
 */
 function handler({api, event, helpers, imports}) {
+ 
  var jan = api.data.record_1.form.fields.u_january.displayValue;
  var feb = api.data.record_1.form.fields.u_february.displayValue;
  var mar = api.data.record_1.form.fields.u_march.displayValue;
@@ -31,20 +32,29 @@ function handler({api, event, helpers, imports}) {
 
  var months = [jan,feb,mar,apr,may,jun,jul,aug,sept,oct,nov,dec];
  var choices =['january','february','march', 'april','may','june', 'july','august', 'september','october','november','december'];
+ console.log('Executed : '+months+' -- '+year+' -- '+totalB);
+ api.data.create_a_record_1.execute({
+    totalB:totalB,
+    year:year,
+    months:months,
+    number:api.state.wbsNumber
+ });
+console.log('Executed..');
+console.log('WBS '+api.state.wbsNumber);
 }]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-31 12:03:37</sys_created_on>
         <sys_id>34c6b4f7c3db5210945e9e1d050131c0</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>New client script 3</sys_name>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_ux_client_script_34c6b4f7c3db5210945e9e1d050131c0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-04 04:36:28</sys_updated_on>
+        <sys_updated_on>2025-02-04 11:54:43</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

@@ -3,30 +3,30 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-03 06:53:29</sys_created_on>
+            <sys_created_on>2025-02-04 15:15:48</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>8c9deb28c3679610945e9e1d050131e0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>842aeec1c3ab1a10945e9e1d050131da</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_1040502_wbs_wbs" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">c49deb28c3679610945e9e1d050131dc</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">9960cb57c31f5e50945e9e1d05013161</sys_ui_section>
+            <sys_ui_section caption="WBS Details" display_value="WBS Details" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">cc2aeec1c3ab1a10945e9e1d050131d8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-03 06:53:29</sys_updated_on>
+            <sys_updated_on>2025-02-05 10:01:59</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
-            <sys_created_by>vijay</sys_created_by>
-            <sys_created_on>2025-02-04 01:19:20</sys_created_on>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-05 11:32:43</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c3aaeff0c3abd610945e9e1d0501312b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>82a0c7d1c3239a10945e9e1d050131bf</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_1040502_wbs_wbs" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">c49deb28c3679610945e9e1d050131dc</sys_ui_form>
-            <sys_ui_section caption="Monthly Budget Details" display_value="Monthly Budget Details" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">43aaeff0c3abd610945e9e1d05013129</sys_ui_section>
-            <sys_updated_by>vijay</sys_updated_by>
-            <sys_updated_on>2025-02-04 01:19:20</sys_updated_on>
+            <sys_ui_section caption="Monthly" display_value="Monthly" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">3da0c7d1c3239a10945e9e1d050131b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-06 03:16:43</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1040502_wbs_wbs</name>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_1040502_wbs.Create a Record</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Create a Record</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+  "name": "totalB",&#13;
+  "label": "Total Budget",&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "year",&#13;
+  "label": "Year",&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "months",&#13;
+  "label": "Months",&#13;
+  "fieldType": "array",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "number",&#13;
+  "label": "Number",&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true&#13;
+}&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Months",
+  "comment" : ""
+}, {
+  "message" : "Number",
+  "comment" : ""
+}, {
+  "message" : "Total Budget",
+  "comment" : ""
+}, {
+  "message" : "Year",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var total = input.totalB;
+    var year = input.year;
+    var months = input.months;
+	var number = input.number;
+    var choices = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+
+    gs.info('BR 1 : ' + months +' -- '+number+'-- '+year);
+	var wbs = new GlideRecord('x_1040502_wbs_wbs');
+	wbs.addQuery('number',input.number.trim());
+	//var sysID = gr.sys_id;
+	wbs.query();
+	if(wbs.next()){
+	gs.info('SYSID'+wbs.sys_id);
+
+    for (var i = 0; i < months.length; i++) {
+        var bud = new GlideRecord('x_1040502_wbs_budget');
+        bud.initialize();
+        bud.u_wbs = wbs.sys_id;
+        bud.u_total_budget = total.replace(/\₫/g,"");
+        bud.year = year;
+        bud.u_month = choices[i];
+        bud.u_budget = months[i].replace(/\₫/g,"");
+        bud.insert();
+        gs.info('BR 2 : ' + bud.number);
+
+    }
+	}
+
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 09:57:20</sys_created_on>
+        <sys_id>8101e541c3271a10945e9e1d050131fd</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Create a Record</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_8101e541c3271a10945e9e1d050131fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-05 04:08:08</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=8101e541c3271a10945e9e1d050131fd"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>8101e541c3271a10945e9e1d050131fd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 09:57:19</sys_created_on>
+        <sys_id>f6316581c3271a10945e9e1d050131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 09:57:19</sys_updated_on>
+        <table>sys_ux_data_broker_transform</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

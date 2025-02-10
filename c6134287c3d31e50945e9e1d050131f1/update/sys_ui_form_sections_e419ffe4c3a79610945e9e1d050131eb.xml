@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_form_sections form_id="e419ffe4c3a79610945e9e1d050131eb" sys_domain="global" table="x_1040502_wbs_wbs" version="3">
         <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-03 07:43:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>a419ffe4c3a79610945e9e1d050131ee</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_1040502_wbs_wbs" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e419ffe4c3a79610945e9e1d050131eb</sys_ui_form>
-            <sys_ui_section caption="Budget" display_value="Budget" name="x_1040502_wbs_wbs" sys_domain="global" view="6819ffe4c3a79610945e9e1d05013180">e019ffe4c3a79610945e9e1d05013186</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-03 07:43:45</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-02-03 07:43:45</sys_created_on>

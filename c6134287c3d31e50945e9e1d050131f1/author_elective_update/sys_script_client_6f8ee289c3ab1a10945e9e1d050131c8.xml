@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>applicant_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name/>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+ if(g_form.getValue('applicant_name') && g_form.isNewRecord()){
+   g_form.setDisplay('applicant_name.company',true);
+   g_form.setDisplay('applicant_name.employee_number',true);
+   g_form.setDisplay('applicant_name.department',true);
+   g_form.setDisplay('applicant_name.x_1097202_epos_division_name',true);
+ }else{
+	g_form.setDisplay('applicant_name.company',false);
+   g_form.setDisplay('applicant_name.employee_number',false);
+   g_form.setDisplay('applicant_name.department',false);
+   g_form.setDisplay('applicant_name.x_1097202_epos_division_name',false);
+ }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 15:40:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6f8ee289c3ab1a10945e9e1d050131c8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_script_client_6f8ee289c3ab1a10945e9e1d050131c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 15:48:43</sys_updated_on>
+        <table>x_1040502_wbs_wbs</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_script_client_6f8ee289c3ab1a10945e9e1d050131c8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;applicant_name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name/&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+ if(g_form.getValue('applicant_name') &amp;&amp; g_form.isNewRecord()){
+   g_form.setDisplay('applicant_name.company',true);
+   g_form.setDisplay('applicant_name.employee_number',true);
+   g_form.setDisplay('applicant_name.department',true);
+   g_form.setDisplay('applicant_name.x_1097202_epos_division_name',true);
+ }else{
+	g_form.setDisplay('applicant_name.company',false);
+   g_form.setDisplay('applicant_name.employee_number',false);
+   g_form.setDisplay('applicant_name.department',false);
+   g_form.setDisplay('applicant_name.x_1097202_epos_division_name',false);
+ }
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-04 15:40:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6f8ee289c3ab1a10945e9e1d050131c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="WBS" source="x_1040502_wbs"&gt;c6134287c3d31e50945e9e1d050131f1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="WBS"&gt;c6134287c3d31e50945e9e1d050131f1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_6f8ee289c3ab1a10945e9e1d050131c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-04 15:48:43&lt;/sys_updated_on&gt;&lt;table&gt;x_1040502_wbs_wbs&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1121900994</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 15:48:43</sys_created_on>
+        <sys_id>92a1f68dc3ab1a10945e9e1d050131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194d1a6490f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 15:48:43</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1aa1f68d30ab1a10615dcd5fce40d3c9</update_guid>
+        <update_guid_history>1aa1f68d30ab1a10615dcd5fce40d3c9:1121900994,4430bec9adab1a1049132880766e395d:625580172,dadfa20987ab1a107870ac86c29c49f3:98629095</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-04 15:49:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0f603f52fbf348c683308385485285a4</sys_id>
+        <sys_metadata>6f8ee289c3ab1a10945e9e1d050131c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent display_value="WBS">5d738a87c3d31e50945e9e1d050131cb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_script_client_6f8ee289c3ab1a10945e9e1d050131c8</sys_update_name>
+        <sys_update_version display_value="sys_script_client_6f8ee289c3ab1a10945e9e1d050131c8">92a1f68dc3ab1a10945e9e1d050131ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-04 15:49:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
