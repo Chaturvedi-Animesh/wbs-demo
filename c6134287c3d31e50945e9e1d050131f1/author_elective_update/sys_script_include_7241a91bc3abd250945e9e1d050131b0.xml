@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1040502_wbs.createHistoryRecord</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>createHistoryRecord</name>
+        <script><![CDATA[var createHistoryRecord = Class.create();
+createHistoryRecord.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    wbsHistoryRecord: function() {
+
+        var sysID = this.getParameter('sysparm_wbs');
+        var comments = this.getParameter('sysparm_reason');
+		gs.info('CH : '+sysID +' -- '+comments);
+
+        var ch = new GlideRecord('x_1040502_wbs_change_history');
+        ch.addEncodedQuery('budget=' +sysID +'^reason=NULL');
+        ch.query();
+        while (ch.next()) {
+            ch.reason = comments;
+			gs.info('reason '+comments);
+            ch.update();
+        }
+
+    },
+    type: 'createHistoryRecord'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 09:57:00</sys_created_on>
+        <sys_id>7241a91bc3abd250945e9e1d050131b0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>createHistoryRecord</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_script_include_7241a91bc3abd250945e9e1d050131b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-11 11:52:46</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>7241a91bc3abd250945e9e1d050131b0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 09:56:59</sys_created_on>
+        <sys_id>9644e55bc3abd250945e9e1d0501311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-11 09:56:59</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_script_include_7241a91bc3abd250945e9e1d050131b0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1040502_wbs.createHistoryRecord&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;createHistoryRecord&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var createHistoryRecord = Class.create();
+createHistoryRecord.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    wbsHistoryRecord: function() {
+
+        var sysID = this.getParameter('sysparm_wbs');
+        var comments = this.getParameter('sysparm_reason');
+		gs.info('CH : '+sysID +' -- '+comments);
+
+        var ch = new GlideRecord('x_1040502_wbs_change_history');
+        ch.addEncodedQuery('budget=' +sysID +'^reason=NULL');
+        ch.query();
+        while (ch.next()) {
+            ch.reason = comments;
+			gs.info('reason '+comments);
+            ch.update();
+        }
+
+    },
+    type: 'createHistoryRecord'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-11 09:57:00&lt;/sys_created_on&gt;&lt;sys_id&gt;7241a91bc3abd250945e9e1d050131b0&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;createHistoryRecord&lt;/sys_name&gt;&lt;sys_package display_value="WBS" source="x_1040502_wbs"&gt;c6134287c3d31e50945e9e1d050131f1&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="WBS"&gt;c6134287c3d31e50945e9e1d050131f1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_7241a91bc3abd250945e9e1d050131b0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-11 11:52:46&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;7241a91bc3abd250945e9e1d050131b0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-11 09:56:59&lt;/sys_created_on&gt;&lt;sys_id&gt;9644e55bc3abd250945e9e1d0501311f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-02-11 09:56:59&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1879221502</payload_hash>
+        <record_name>createHistoryRecord</record_name>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 11:52:46</sys_created_on>
+        <sys_id>82ce7193c36fd250945e9e1d0501313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f4dac8180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-11 11:52:46</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>0ace7193fe6fd25078dfddc3c3b4a13d</update_guid>
+        <update_guid_history>0ace7193fe6fd25078dfddc3c3b4a13d:1879221502,abd7b517172fd250b8d538a1e0640251:-1948522606,4eb7b55bad2fd2502ccb687bca90bfc8:1988666249,dee6f11bd62fd250686604542c19b3f9:-1055772264,bbd6f9d7d12fd2509ea4cf318a87b87d:1568597495,ea44e59fc9abd25068cbed16e89b4c9c:451542574</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 11:57:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>e1a6fde5d6874c5498415639b0c64f44</sys_id>
+        <sys_metadata>7241a91bc3abd250945e9e1d050131b0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>createHistoryRecord</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_script_include_7241a91bc3abd250945e9e1d050131b0</sys_update_name>
+        <sys_update_version display_value="sys_script_include_7241a91bc3abd250945e9e1d050131b0">82ce7193c36fd250945e9e1d0501313e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-11 11:57:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>DemoWBS</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_1040502_wbs_demowbs</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="WBS" name="x_1040502_wbs_wbs">5d738a87c3d31e50945e9e1d050131cb</super_class>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:55:46</sys_created_on>
+        <sys_id>580f590bc3679250945e9e1d050131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DemoWBS</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_db_object_580f590bc3679250945e9e1d050131ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:55:46</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_1040502_wbs.demowbs_user" name="x_1040502_wbs.demowbs_user">491f51cbc3679250945e9e1d05013100</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_db_object_580f590bc3679250945e9e1d050131ac</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><is_extendable>false</is_extendable><label>DemoWBS</label><live_feed_enabled>false</live_feed_enabled><name>x_1040502_wbs_demowbs</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="WBS" name="x_1040502_wbs_wbs">5d738a87c3d31e50945e9e1d050131cb</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 14:55:46</sys_created_on><sys_id>580f590bc3679250945e9e1d050131ac</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DemoWBS</sys_name><sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package><sys_policy/><sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope><sys_update_name>sys_db_object_580f590bc3679250945e9e1d050131ac</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 14:55:46</sys_updated_on><update_access>false</update_access><user_role display_value="x_1040502_wbs.demowbs_user" name="x_1040502_wbs.demowbs_user">491f51cbc3679250945e9e1d05013100</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>1289517870</payload_hash>
+        <record_name>DemoWBS</record_name>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:55:48</sys_created_on>
+        <sys_id>ad1f91cbc3679250945e9e1d050131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f05bfd1e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:55:48</sys_updated_on>
+        <type>Table</type>
+        <update_guid>a11f91cbf6679250a15f567657cd3aec</update_guid>
+        <update_guid_history>a11f91cbf6679250a15f567657cd3aec:1289517870</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:56:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>198ec655fd7d4588974078e941f74631</sys_id>
+        <sys_metadata>580f590bc3679250945e9e1d050131ac</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DemoWBS</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_db_object_580f590bc3679250945e9e1d050131ac</sys_update_name>
+        <sys_update_version display_value="sys_db_object_580f590bc3679250945e9e1d050131ac">ad1f91cbc3679250945e9e1d050131ec</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:56:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

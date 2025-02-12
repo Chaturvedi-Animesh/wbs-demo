@@ -6,8 +6,8 @@
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments>Save record and remain here</comments>
-        <condition>current.isNewRecord() &amp;&amp;current.canCreate()</condition>
+        <comments/>
+        <condition>(current.isNewRecord() &amp;&amp;current.canCreate())  || (!current.isNewRecord() &amp;&amp; current.canWrite() &amp;&amp; current.state == '10' &amp;&amp; !new x_1040502_wbs.checkApprovalHistory().checkRecord(current.sys_id));</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>true</form_button_v2>
@@ -35,14 +35,14 @@ current.update();]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
-        <show_update>false</show_update>
+        <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-07 03:53:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e4caaff1c32f1e10945e9e1d05013180</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Submit</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -50,7 +50,7 @@ current.update();]]></script>
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_ui_action_e4caaff1c32f1e10945e9e1d05013180</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-07 07:27:15</sys_updated_on>
+        <sys_updated_on>2025-02-11 10:58:12</sys_updated_on>
         <table>x_1040502_wbs_wbs</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

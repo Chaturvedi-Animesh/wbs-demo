@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name/>
+        <action_name>submit_record</action_name>
         <active>true</active>
-        <client>false</client>
-        <client_script_v2><![CDATA[function onClick(g_form) {
-
-}]]></client_script_v2>
+        <client>true</client>
+        <client_script_v2><![CDATA[ function onClick(g_form) {
+	g_modal.showFields({
+        title: "Reason",
+        fields: [{
+            type: 'textarea',
+            name: 'work_notes',
+            label: getMessage('Comments'),
+            mandatory: true
+        }],
+        size: 'lg'
+		
+    }).then(function(fieldValues) {
+        var ga = new GlideAjax('createHistoryRecord');
+        ga.addParam('sysparm_name', 'wbsHistoryRecord');
+        ga.addParam('sysparm_wbs', g_form.getUniqueValue());
+        ga.addParam('sysparm_reason', fieldValues.updatedFields[0].value);
+		g_form.setValue('state',1);
+		g_form.submit('submit_record');
+        ga.getXMLAnswer(function(response) {});
+    });
+	
+}
+]]></client_script_v2>
         <comments/>
-        <condition>!current.isNewRecord() &amp;&amp; current.canWrite()</condition>
+        <condition>!current.isNewRecord() &amp;&amp; current.canWrite() &amp;&amp; current.state == '10' &amp;&amp; new x_1040502_wbs.checkApprovalHistory().checkRecord(current.sys_id);</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>true</form_button_v2>
@@ -28,10 +48,21 @@
         <list_style/>
         <messages/>
         <name>Submit</name>
-        <onclick/>
+        <onclick>wbsSubmit()</onclick>
         <order>100</order>
-        <script><![CDATA[current.state = '1';
-current.update();]]></script>
+        <script><![CDATA[function wbsSubmit(){
+	g_form.setValue('state', 1);
+	
+	gsftSubmit(null, g_form.getFormElement(), 'submit_record');
+}
+
+if (typeof window == 'undefined')
+	updateWBS();
+
+function updateWBS(){
+	current.state = 1;
+	current.update();
+}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -42,7 +73,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e7c92335c32f1e10945e9e1d050131c2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Submit</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -50,7 +81,7 @@ current.update();]]></script>
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_ui_action_e7c92335c32f1e10945e9e1d050131c2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-07 07:27:26</sys_updated_on>
+        <sys_updated_on>2025-02-12 06:25:30</sys_updated_on>
         <table>x_1040502_wbs_wbs</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
@@ -60,10 +91,10 @@ current.update();]]></script>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-07 03:53:37</sys_created_on>
         <sys_id>d0ca2735c32f1e10945e9e1d05013132</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-07 03:53:37</sys_updated_on>
+        <sys_updated_on>2025-02-11 10:52:51</sys_updated_on>
         <table>sys_ui_action</table>
-        <use_es_latest>true</use_es_latest>
+        <use_es_latest>false</use_es_latest>
     </sys_es_latest_script>
 </record_update>

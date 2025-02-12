@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="DemoWBS">c11f91cbc3679250945e9e1d05013165</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>DemoWBSs</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1040502_wbs_demowbs</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1040502_wbs.demowbs_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:55:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8d1f91cbc3679250945e9e1d05013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DemoWBSs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_app_module_8d1f91cbc3679250945e9e1d05013169</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:55:46</sys_updated_on>
+        <timeline_page/>
+        <title>DemoWBSs</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_app_module_8d1f91cbc3679250945e9e1d05013169</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="DemoWBS">c11f91cbc3679250945e9e1d05013165</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>DemoWBSs</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1040502_wbs_demowbs</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1040502_wbs.demowbs_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 14:55:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8d1f91cbc3679250945e9e1d05013169</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DemoWBSs</sys_name><sys_overrides/><sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package><sys_policy/><sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope><sys_update_name>sys_app_module_8d1f91cbc3679250945e9e1d05013169</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 14:55:46</sys_updated_on><timeline_page/><title>DemoWBSs</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>232560372</payload_hash>
+        <record_name>DemoWBSs</record_name>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:55:46</sys_created_on>
+        <sys_id>011f91cbc3679250945e9e1d0501316e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f05bf6950000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:55:46</sys_updated_on>
+        <type>Module</type>
+        <update_guid>c11f91cbbe67925098fb548961efdf6d</update_guid>
+        <update_guid_history>c11f91cbbe67925098fb548961efdf6d:232560372</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="DemoWBSs">323fd5cbc3679250945e9e1d050131b0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:56:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>66d1139c1fe247be87887da4fda1f539</sys_id>
+        <sys_metadata>8d1f91cbc3679250945e9e1d05013169</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DemoWBSs</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_app_module_8d1f91cbc3679250945e9e1d05013169</sys_update_name>
+        <sys_update_version display_value="sys_app_module_8d1f91cbc3679250945e9e1d05013169">011f91cbc3679250945e9e1d0501316e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:56:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

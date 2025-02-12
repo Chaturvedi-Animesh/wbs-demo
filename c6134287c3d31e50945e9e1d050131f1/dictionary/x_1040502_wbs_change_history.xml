@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="0bc9d19dc3e75a10945e9e1d05013166" label="Change History" max_length="40" name="x_1040502_wbs_change_history" type="collection">
-        <element label="Budget" max_length="32" name="budget" reference="x_1040502_wbs_budget" type="reference"/>
-        <element label="Month" max_length="40" name="month" type="string"/>
+        <element label="WBS Number" max_length="32" name="budget" reference="x_1040502_wbs_wbs" type="reference"/>
+        <element label="Label" max_length="40" name="month" type="string"/>
         <element label="New Value" max_length="40" name="new_value" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Old Value" max_length="40" name="old_value" type="string"/>
         <element label="Reason" max_length="4000" name="reason" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">
             <element name="budget"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
         </index>
     </element>
 </database>

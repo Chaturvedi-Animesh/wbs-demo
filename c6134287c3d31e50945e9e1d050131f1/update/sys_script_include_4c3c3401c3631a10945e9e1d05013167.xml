@@ -2,35 +2,41 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <active>true</active>
-        <api_name>x_1040502_wbs.createBudgetRecords</api_name>
+        <api_name>x_1040502_wbs.checkApprovalHistory</api_name>
         <caller_access/>
-        <client_callable>true</client_callable>
+        <client_callable>false</client_callable>
         <description/>
         <mobile_callable>false</mobile_callable>
-        <name>createBudgetRecords</name>
-        <script><![CDATA[var createBudgetRecords = Class.create();
-createBudgetRecords.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+        <name>checkApprovalHistory</name>
+        <script><![CDATA[var checkApprovalHistory = Class.create();
+checkApprovalHistory.prototype = {
+    initialize: function() {},
 
-	createRecord : function(){
-      gs.info('Workspace triggered');
-	  var value ="success";
-	  return value;
-	},
-    
-    type: 'createBudgetRecords'
-});]]></script>
+    checkRecord: function(param) {
+        var appH = new GlideRecord('u_approval_history');
+        appH.addEncodedQuery('parent=' +param);
+        appH.query();
+        if (appH.hasNext()) {
+            return true;
+        }
+		else{
+			return false;
+		}
+    },
+    type: 'checkApprovalHistory'
+};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-04 07:17:15</sys_created_on>
         <sys_id>4c3c3401c3631a10945e9e1d05013167</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>createBudgetRecords</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>checkApprovalHistory</sys_name>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_script_include_4c3c3401c3631a10945e9e1d05013167</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-04 07:20:54</sys_updated_on>
+        <sys_updated_on>2025-02-12 06:42:14</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>4c3c3401c3631a10945e9e1d05013167</id>

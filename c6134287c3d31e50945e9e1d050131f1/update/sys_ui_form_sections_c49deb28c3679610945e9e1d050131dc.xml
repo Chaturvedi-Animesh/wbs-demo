@@ -17,16 +17,30 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-12 03:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05685923c3af1650945e9e1d0501315f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1040502_wbs_wbs" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">c49deb28c3679610945e9e1d050131dc</sys_ui_form>
+            <sys_ui_section caption="Budget Details" display_value="Budget Details" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">0d685923c3af1650945e9e1d0501315a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-12 03:43:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-02-05 11:32:43</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>82a0c7d1c3239a10945e9e1d050131bf</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_1040502_wbs_wbs" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">c49deb28c3679610945e9e1d050131dc</sys_ui_form>
             <sys_ui_section caption="Monthly" display_value="Monthly" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">3da0c7d1c3239a10945e9e1d050131b9</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-06 03:16:43</sys_updated_on>
+            <sys_updated_on>2025-02-12 03:43:31</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1040502_wbs_wbs</name>

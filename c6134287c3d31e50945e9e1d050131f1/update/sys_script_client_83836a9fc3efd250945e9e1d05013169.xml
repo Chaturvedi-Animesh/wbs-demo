@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Readonly - onchange</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+ g_form.setReadOnly('u_year',false);
+  if(g_form.getValue('state') != '10'){
+	g_form.setReadOnly('activity_type',true);
+	g_form.setReadOnly('department',true);
+	g_form.setReadOnly('channel',true);
+	g_form.setReadOnly('campaign',true);
+	g_form.setReadOnly('main_expense',true);
+	g_form.setReadOnly('activity',true);
+	g_form.setReadOnly('product_category',true);
+	g_form.setReadOnly('advertising_type',true);
+	g_form.setReadOnly('sub_expense',true);
+	g_form.setReadOnly('u_project_type',true);
+	g_form.setReadOnly('u_number_range',true);
+	g_form.setReadOnly('u_description',true);
+   }
+   else{
+	g_form.setReadOnly('activity_type',false);
+	g_form.setReadOnly('department',false);
+	g_form.setReadOnly('channel',false);
+	g_form.setReadOnly('campaign',false);
+	g_form.setReadOnly('main_expense',false);
+	g_form.setReadOnly('activity',false);
+	g_form.setReadOnly('product_category',false);
+	g_form.setReadOnly('advertising_type',false);
+	g_form.setReadOnly('sub_expense',false);
+	g_form.setReadOnly('u_project_type',false);
+	g_form.setReadOnly('u_number_range',false);
+	g_form.setReadOnly('u_description',false);
+   }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-11 14:34:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>83836a9fc3efd250945e9e1d05013169</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Readonly - onchange</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_script_client_83836a9fc3efd250945e9e1d05013169</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-12 04:49:01</sys_updated_on>
+        <table>x_1040502_wbs_wbs</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="DELETE">
+        <group/>
+        <hidden>false</hidden>
+        <name>Workspace_WBS_0</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 15:23:05</sys_created_on>
+        <sys_id>59552dc3c3a79250945e9e1d050131b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace_wbs_0</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_ui_view_59552dc3c3a79250945e9e1d050131b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 15:23:05</sys_updated_on>
+        <title>Workspace_wbs_0</title>
+        <user/>
+    </sys_ui_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_ui_view_59552dc3c3a79250945e9e1d050131b1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view"><sys_ui_view action="INSERT_OR_UPDATE"><group/><hidden>false</hidden><name>Workspace_WBS_0</name><roles/><sys_class_name>sys_ui_view</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 15:23:05</sys_created_on><sys_id>59552dc3c3a79250945e9e1d050131b1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Workspace_wbs_0</sys_name><sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package><sys_policy/><sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope><sys_update_name>sys_ui_view_59552dc3c3a79250945e9e1d050131b1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 15:23:05</sys_updated_on><title>Workspace_wbs_0</title><user/></sys_ui_view></record_update>]]></payload>
+        <payload_hash>-209805755</payload_hash>
+        <record_name>Workspace_wbs_0</record_name>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 15:23:05</sys_created_on>
+        <sys_id>5d552dc3c3a79250945e9e1d050131b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f074faa40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 15:23:05</sys_updated_on>
+        <type>UI View</type>
+        <update_guid>51552dc32fa79250ada8b83500a0f0b4</update_guid>
+        <update_guid_history>51552dc32fa79250ada8b83500a0f0b4:-209805755</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 15:24:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_view">sys_ui_view</sys_db_object>
+        <sys_id>73392cff63204d21aee37ed63fe3f009</sys_id>
+        <sys_metadata>59552dc3c3a79250945e9e1d050131b1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workspace_wbs_0</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_ui_view_59552dc3c3a79250945e9e1d050131b1</sys_update_name>
+        <sys_update_version display_value="sys_ui_view_59552dc3c3a79250945e9e1d050131b1">5d552dc3c3a79250945e9e1d050131b4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 15:24:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

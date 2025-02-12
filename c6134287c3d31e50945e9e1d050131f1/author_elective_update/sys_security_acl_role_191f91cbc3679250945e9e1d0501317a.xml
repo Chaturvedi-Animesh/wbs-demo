@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:55:46</sys_created_on>
+        <sys_id>191f91cbc3679250945e9e1d0501317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1040502_wbs_demowbs.x_1040502_wbs.demowbs_user</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_security_acl display_value="x_1040502_wbs_demowbs">c51f91cbc3679250945e9e1d05013176</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_191f91cbc3679250945e9e1d0501317a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:55:46</sys_updated_on>
+        <sys_user_role display_value="x_1040502_wbs.demowbs_user" name="x_1040502_wbs.demowbs_user">491f51cbc3679250945e9e1d05013100</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_security_acl_role_191f91cbc3679250945e9e1d0501317a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 14:55:46</sys_created_on><sys_id>191f91cbc3679250945e9e1d0501317a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1040502_wbs_demowbs.x_1040502_wbs.demowbs_user</sys_name><sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package><sys_policy/><sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope><sys_security_acl display_value="x_1040502_wbs_demowbs">c51f91cbc3679250945e9e1d05013176</sys_security_acl><sys_update_name>sys_security_acl_role_191f91cbc3679250945e9e1d0501317a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 14:55:46</sys_updated_on><sys_user_role display_value="x_1040502_wbs.demowbs_user" name="x_1040502_wbs.demowbs_user">491f51cbc3679250945e9e1d05013100</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-842957427</payload_hash>
+        <record_name>x_1040502_wbs_demowbs.x_1040502_wbs.demowbs_user</record_name>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:55:46</sys_created_on>
+        <sys_id>d51f91cbc3679250945e9e1d0501317e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f05bf9050000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:55:46</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>d91f91cb3667925008626b8b327e2f7d</update_guid>
+        <update_guid_history>d91f91cb3667925008626b8b327e2f7d:-842957427</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1040502_wbs_demowbs.x_1040502_wbs.demowbs_user">b63fd5cbc3679250945e9e1d0501315b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 14:56:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>3427a52732a0434099cbc9a1ad552390</sys_id>
+        <sys_metadata>191f91cbc3679250945e9e1d0501317a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1040502_wbs_demowbs.x_1040502_wbs.demowbs_user</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent display_value="">c51f91cbc3679250945e9e1d05013176</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_191f91cbc3679250945e9e1d0501317a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_191f91cbc3679250945e9e1d0501317a">d51f91cbc3679250945e9e1d0501317e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 14:56:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

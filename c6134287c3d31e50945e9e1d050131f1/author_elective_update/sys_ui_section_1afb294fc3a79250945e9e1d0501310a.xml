@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="x_1040502_wbs_wbs_history" section_id="1afb294fc3a79250945e9e1d0501310a" sys_domain="global" table="x_1040502_wbs_wbs_history" version="3" view="Change_History">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>new_value</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-10 15:52:21</sys_created_on>
+            <sys_id>b90c694fc3a79250945e9e1d05013196</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_1040502_wbs_wbs_history" display_value="x_1040502_wbs_wbs_history" name="x_1040502_wbs_wbs_history" sys_domain="global" view="52fbe54fc3a79250945e9e1d050131af">1afb294fc3a79250945e9e1d0501310a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-10 15:52:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>x_1040502_wbs_wbs_history</caption>
+            <header>false</header>
+            <name>x_1040502_wbs_wbs_history</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-10 15:52:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1afb294fc3a79250945e9e1d0501310a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1040502_wbs_wbs_history</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+            <sys_update_name>sys_ui_section_1afb294fc3a79250945e9e1d0501310a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-10 15:52:06</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Change History" name="Change_History">52fbe54fc3a79250945e9e1d050131af</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="WBS">c6134287c3d31e50945e9e1d050131f1</application>
+        <file_path/>
+        <instance_id>cca3323adb1a71542f082a5913961937</instance_id>
+        <instance_name>dev208145</instance_name>
+        <name>sys_ui_section_1afb294fc3a79250945e9e1d0501310a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="x_1040502_wbs_wbs_history" section_id="1afb294fc3a79250945e9e1d0501310a" sys_domain="global" table="x_1040502_wbs_wbs_history" version="3" view="Change_History"><sys_ui_element action="INSERT_OR_UPDATE"><element>new_value</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 15:52:21</sys_created_on><sys_id>b90c694fc3a79250945e9e1d05013196</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="x_1040502_wbs_wbs_history" display_value="x_1040502_wbs_wbs_history" name="x_1040502_wbs_wbs_history" sys_domain="global" view="52fbe54fc3a79250945e9e1d050131af">1afb294fc3a79250945e9e1d0501310a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 15:52:21</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>x_1040502_wbs_wbs_history</caption><header>false</header><name>x_1040502_wbs_wbs_history</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-10 15:52:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1afb294fc3a79250945e9e1d0501310a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1040502_wbs_wbs_history</sys_name><sys_overrides/><sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package><sys_policy/><sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope><sys_update_name>sys_ui_section_1afb294fc3a79250945e9e1d0501310a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-10 15:52:06</sys_updated_on><sys_user/><title>false</title><view display_value="Change History" name="Change_History">52fbe54fc3a79250945e9e1d050131af</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>575491005</payload_hash>
+        <record_name>WBS History</record_name>
+        <reverted_from/>
+        <source>98183c89c3231a10945e9e1d050131fd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 15:52:21</sys_created_on>
+        <sys_id>3d0c694fc3a79250945e9e1d05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194f08fc3cd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 15:52:21</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>f10c694fd0a79250db05288cc23a9098</update_guid>
+        <update_guid_history>f10c694fd0a79250db05288cc23a9098:575491005,defb294feda792507fe609fcb4d7880c:-1549250014</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-10 15:56:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>568b6fda781e4eae9644353e42735bf9</sys_id>
+        <sys_metadata>1afb294fc3a79250945e9e1d0501310a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1040502_wbs_wbs_history</sys_name>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_parent display_value="">816b690fc3a79250945e9e1d050131b4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_scope_delete display_value="">07e4eadca18e44f88206ad0f87fc7a01</sys_scope_delete>
+        <sys_update_name>sys_ui_section_1afb294fc3a79250945e9e1d0501310a</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_1afb294fc3a79250945e9e1d0501310a">3d0c694fc3a79250945e9e1d05013198</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-10 15:56:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

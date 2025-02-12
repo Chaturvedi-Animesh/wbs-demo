@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Budget</column_label>
+        <column_label>WBS Number</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -40,7 +40,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_1040502_wbs_budget">x_1040502_wbs_budget</reference>
+        <reference display_value="" name="x_1040502_wbs_wbs">x_1040502_wbs_wbs</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -52,13 +52,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-05 04:05:30</sys_created_on>
-        <sys_name>Budget</sys_name>
+        <sys_name>WBS Number</sys_name>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
         <sys_policy/>
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_dictionary_x_1040502_wbs_change_history_budget</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-05 04:05:30</sys_updated_on>
+        <sys_updated_on>2025-02-10 08:35:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

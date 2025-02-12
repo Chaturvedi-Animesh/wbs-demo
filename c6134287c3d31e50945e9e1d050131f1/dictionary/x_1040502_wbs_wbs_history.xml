@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="02be2d43c3e79250945e9e1d050131c4" label="WBS History" max_length="40" name="x_1040502_wbs_wbs_history" type="collection">
+        <element label="New Value" max_length="40" name="new_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Old Value" max_length="40" name="old_value" type="string"/>
+    </element>
+</database>
