@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="d4b342c7c3d31e50945e9e1d05013106" label="Budget" max_length="40" name="x_1040502_wbs_budget" text_index="true" type="collection">
+    <element db_object_id="d4b342c7c3d31e50945e9e1d05013106" extends="task" label="Budget" max_length="40" name="x_1040502_wbs_budget" text_index="true" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return  gs.getUserID();  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Applicant Name" max_length="32" name="applicant_name" reference="sys_user" type="reference" virtual="true"/>
+        <element attributes="omit_sys_original=true" label="April" max_length="20" name="april" type="currency"/>
+        <element attributes="omit_sys_original=true" label="August" max_length="20" name="august" type="currency"/>
         <element choice="3" label="Currency" max_length="32" name="currency" reference="fx_currency" type="reference">
             <choice/>
         </element>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="omit_sys_original=true" label="December" max_length="20" name="december" type="currency"/>
+        <element attributes="omit_sys_original=true" label="February" max_length="20" name="february" type="currency"/>
+        <element attributes="omit_sys_original=true" label="January" max_length="20" name="january" type="currency"/>
+        <element attributes="omit_sys_original=true" label="July" max_length="20" name="july" type="currency"/>
+        <element attributes="omit_sys_original=true" label="June" max_length="20" name="june" type="currency"/>
+        <element attributes="omit_sys_original=true" label="March" max_length="20" name="march" type="currency"/>
+        <element attributes="omit_sys_original=true" label="May" max_length="20" name="may" type="currency"/>
+        <element attributes="omit_sys_original=true" label="November" max_length="20" name="november" type="currency"/>
+        <element attributes="omit_sys_original=true" label="October" max_length="20" name="october" type="currency"/>
+        <element label="Reason" max_length="4000" name="reason" type="string"/>
+        <element attributes="omit_sys_original=true" label="September" max_length="20" name="september" type="currency"/>
         <element label="Total Budget" max_length="40" name="total_budget" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Actual Budget" max_length="40" name="u_actual_budget" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="April" max_length="40" name="u_april" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="August" max_length="40" name="u_august" type="string"/>
+        <element attributes="omit_sys_original=true" label="April" max_length="20" name="u_april" type="currency"/>
+        <element attributes="omit_sys_original=true" label="August" max_length="20" name="u_august" type="currency"/>
         <element attributes="edge_encryption_enabled=true" label="Budget Estimates" max_length="40" name="u_budget" type="string"/>
         <element attributes="omit_sys_original=true" label="Budget Estimate" max_length="20" name="u_budget_estimate" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" label="December" max_length="40" name="u_december" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="February" max_length="40" name="u_february" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="January" max_length="40" name="u_january" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="July" max_length="40" name="u_july" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="June" max_length="40" name="u_june" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="March" max_length="40" name="u_march" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="May" max_length="40" name="u_may" type="string"/>
+        <element attributes="omit_sys_original=true" label="December" max_length="20" name="u_december" type="currency"/>
+        <element attributes="omit_sys_original=true" label="February" max_length="20" name="u_february" type="currency"/>
+        <element attributes="omit_sys_original=true" label="January" max_length="20" name="u_january" type="currency"/>
+        <element attributes="omit_sys_original=true" label="July" max_length="20" name="u_july" type="currency"/>
+        <element attributes="omit_sys_original=true" label="June" max_length="20" name="u_june" type="currency"/>
+        <element attributes="omit_sys_original=true" label="March" max_length="20" name="u_march" type="currency"/>
+        <element attributes="omit_sys_original=true" label="May" max_length="20" name="u_may" type="currency"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Month" max_length="40" name="u_month" read_only="true" type="string">
             <choice>
                 <element inactive_on_update="false" label="January" sequence="0" value="january"/>
@@ -33,17 +46,20 @@
                 <element inactive_on_update="false" label="December" sequence="11" value="december"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="November" max_length="40" name="u_november" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="October" max_length="40" name="u_october" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="September" max_length="40" name="u_september" type="string"/>
+        <element attributes="omit_sys_original=true" label="November" max_length="20" name="u_november" type="currency"/>
+        <element attributes="omit_sys_original=true" label="October" max_length="20" name="u_october" type="currency"/>
+        <element attributes="omit_sys_original=true" label="September" max_length="20" name="u_september" type="currency"/>
         <element attributes="omit_sys_original=true" label="Total Budget" max_length="20" name="u_total_budget" type="currency"/>
-        <element attributes="encode_utf8=false" label="WBS" max_length="32" name="u_wbs" reference="x_1040502_wbs_wbs" reference_floats="true" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Year" max_length="40" name="year" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="WBS" max_length="32" name="u_wbs" reference="x_1040502_wbs_wbs" reference_floats="true" reference_qual="javascript: new x_1040502_wbs.checkWBSRecords().getCheckWbs()" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Year" max_length="40" name="u_year" type="string">
+            <choice/>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Year" max_length="40" name="year" type="choice">
+            <choice/>
+        </element>
         <index name="index">
-            <element name="currency"/>
-        </index>
-        <index name="index2">
             <element name="u_wbs"/>
+            <element name="active"/>
         </index>
     </element>
 </database>

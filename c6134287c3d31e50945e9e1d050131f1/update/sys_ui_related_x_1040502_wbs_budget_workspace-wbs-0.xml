@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_1040502_wbs_budget" version="2" view="workspace-wbs-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Budget - Workspace WBS 0" name="x_1040502_wbs_budget" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">c9363855c3b75210945e9e1d0501319e</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_1040502_nsc_pe_0_approval_routing_preview.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-17 11:43:31</sys_created_on>
+            <sys_id>49363855c3b75210945e9e1d0501319f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-17 11:43:31</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Budget - Workspace WBS 0" name="x_1040502_wbs_budget" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">c9363855c3b75210945e9e1d0501319e</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>u_approval_history.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-17 11:43:31</sys_created_on>
+            <sys_id>4d363855c3b75210945e9e1d0501319f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-17 11:43:31</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Budget - Workspace WBS 0" name="x_1040502_wbs_budget" related_list="NULL" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">c9363855c3b75210945e9e1d0501319e</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_1040502_wbs_budget_history.u_budget_number</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-17 11:43:31</sys_created_on>
+            <sys_id>41363855c3b75210945e9e1d050131a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-17 11:43:31</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Budget - Workspace WBS 0</calculated_name>
+            <filter/>
+            <name>x_1040502_wbs_budget</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-17 11:43:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9363855c3b75210945e9e1d0501319e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Budget - Workspace WBS 0</sys_name>
+            <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+            <sys_update_name>sys_ui_related_x_1040502_wbs_budget_workspace-wbs-0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-17 11:43:31</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace WBS 0" name="workspace-wbs-0">83504b57db1f5e5043031af713f64b79</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

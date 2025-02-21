@@ -28,20 +28,21 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-    var appH = new GlideRecord('u_approval_history');
-    appH.addEncodedQuery('parent=' +current.sys_id);
+    var appH = new GlideRecord("u_approval_history");
+    appH.addEncodedQuery("parent=" +current.sys_id);
     appH.query();
     if (appH.hasNext()) {
-        var fields = ['activity_type', 'department', 'channel', 'main_expense', 'activity', 'campaign', 'sub_expense', 'product_category', 'advertising_type', 'u_description', 'u_project_type', 'u_number_range'];
+        var fields = ["activity_type", "department", "channel", "main_expense", "activity", "campaign", "sub_expense", "product_category", "advertising_type", "u_description", "u_project_type", "u_number_range","u_year","u_total_budget"];
         fields.forEach(function(field) {
             if (current[field] != previous[field]) {
-                var h = new GlideRecord('x_1040502_wbs_change_history');
+                var h = new GlideRecord("x_1040502_wbs_change_history");
                 h.initialize();
                 h.month = current[field].getLabel();
                 h.budget = current.sys_id;
                 h.old_value = previous[field];
                 h.new_value = current[field];
-				h.reason = current.u_reason.getJournalEntry(-1).match(/\n.*/gm).join("\n");
+				h.reason = current.u_reason.getJournalEntry(1).match(/\n.*/gm).join("\n");
+				//h.reason = current.u_reason;
                 h.insert();
 
             }
@@ -56,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>46288c47c3af5250945e9e1d05013158</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Create History record</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -64,7 +65,7 @@
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_script_46288c47c3af5250945e9e1d05013158</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-11 12:47:00</sys_updated_on>
+        <sys_updated_on>2025-02-19 04:53:19</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

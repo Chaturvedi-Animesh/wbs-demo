@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1040502_wbs_budget</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create History record</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var appH = new GlideRecord('u_approval_history');
+    appH.addEncodedQuery('parent=' +current.sys_id);
+    appH.query();
+    if (appH.hasNext()) {
+        var fields = ['u_total_budget', 'u_year', 'u_january', 'u_february', 'u_march', 'u_april', 'u_may', 'u_june', 'u_july', 'u_august', 'u_september', 'u_october','u_november','u_december'];
+        fields.forEach(function(field) {
+            if (current[field] != previous[field]) {
+                var h = new GlideRecord('x_1040502_wbs_budget_history');
+                h.initialize();
+                h.month = current[field].getLabel();
+                h.budget = current.sys_id;
+                h.old_value = previous[field];
+                h.new_value = current[field];
+				h.reason = current.u_reason.getJournalEntry(-1).match(/\n.*/gm).join("\n");
+				//h.reason = current.u_reason;
+                h.insert();
+
+            }
+        });
+
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-17 10:13:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04916059c3375210945e9e1d050131b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create History record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_script_04916059c3375210945e9e1d050131b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-17 10:25:31</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=04916059c3375210945e9e1d050131b0"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>04916059c3375210945e9e1d050131b0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-17 10:25:30</sys_created_on>
+        <sys_id>de54a45dc3375210945e9e1d05013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-17 10:25:30</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

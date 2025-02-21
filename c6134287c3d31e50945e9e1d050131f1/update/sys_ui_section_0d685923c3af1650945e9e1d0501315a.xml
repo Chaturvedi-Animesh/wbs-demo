@@ -1,46 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Budget Details" section_id="0d685923c3af1650945e9e1d0501315a" sys_domain="global" table="x_1040502_wbs_wbs" version="3" view="workspace-wbs-0">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_total_budget</element>
+            <element>.split</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-12 03:43:31</sys_created_on>
-            <sys_id>19685923c3af1650945e9e1d05013185</sys_id>
+            <sys_created_on>2025-02-19 05:14:29</sys_created_on>
+            <sys_id>b9507dfdc3b31610945e9e1d05013147</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Budget Details" display_value="Budget Details" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">0d685923c3af1650945e9e1d0501315a</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-12 03:43:31</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-12 03:43:31</sys_created_on>
-            <sys_id>11685923c3af1650945e9e1d05013186</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Budget Details" display_value="Budget Details" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">0d685923c3af1650945e9e1d0501315a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-12 03:43:31</sys_updated_on>
+            <sys_updated_on>2025-02-19 05:14:29</sys_updated_on>
             <sys_user/>
             <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_year</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-12 03:43:31</sys_created_on>
-            <sys_id>19685923c3af1650945e9e1d05013186</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Budget Details" display_value="Budget Details" name="x_1040502_wbs_wbs" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">0d685923c3af1650945e9e1d0501315a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-12 03:43:31</sys_updated_on>
-            <sys_user/>
-            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Budget Details</caption>

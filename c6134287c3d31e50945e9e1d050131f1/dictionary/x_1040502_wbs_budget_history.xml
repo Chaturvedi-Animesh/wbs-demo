@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b834245dc3375210945e9e1d050131cc" extends="x_1040502_wbs_change_history" label="Budget History" max_length="40" name="x_1040502_wbs_budget_history" type="collection">
+        <element attributes="encode_utf8=false" label="Budget Number" max_length="32" name="u_budget_number" reference="x_1040502_wbs_budget" type="reference"/>
+        <index name="index">
+            <element name="u_budget_number"/>
+        </index>
+    </element>
+</database>

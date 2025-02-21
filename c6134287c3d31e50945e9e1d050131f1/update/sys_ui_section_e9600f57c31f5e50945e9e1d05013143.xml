@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="e9600f57c31f5e50945e9e1d05013143" sys_domain="global" table="x_1040502_wbs_budget" version="3" view="workspace-wbs-0">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>state</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-03 09:46:11</sys_created_on>
-            <sys_id>f1151cbcc32b9610945e9e1d050131c6</sys_id>
+            <sys_created_on>2025-02-17 12:09:56</sys_created_on>
+            <sys_id>884c7c5dc3b75210945e9e1d050131bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_budget" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">e9600f57c31f5e50945e9e1d05013143</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-03 09:46:11</sys_updated_on>
+            <sys_updated_on>2025-02-17 12:09:56</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>year</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-03 09:46:11</sys_created_on>
-            <sys_id>31151cbcc32b9610945e9e1d050131c7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_budget" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">e9600f57c31f5e50945e9e1d05013143</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-03 09:46:11</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-03 09:46:11</sys_created_on>
-            <sys_id>39151cbcc32b9610945e9e1d050131c7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_budget" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">e9600f57c31f5e50945e9e1d05013143</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-03 09:46:11</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_wbs</element>
-            <position>3</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-03 09:46:11</sys_created_on>
-            <sys_id>31151cbcc32b9610945e9e1d050131c8</sys_id>
+            <sys_created_on>2025-02-17 12:09:56</sys_created_on>
+            <sys_id>c44c7c5dc3b75210945e9e1d050131be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_budget" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">e9600f57c31f5e50945e9e1d05013143</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-03 09:46:11</sys_updated_on>
+            <sys_updated_on>2025-02-17 12:09:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_total_budget</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-03 09:46:11</sys_created_on>
-            <sys_id>39151cbcc32b9610945e9e1d050131c8</sys_id>
+            <sys_created_on>2025-02-17 12:09:56</sys_created_on>
+            <sys_id>cc4c7c5dc3b75210945e9e1d050131be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_budget" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">e9600f57c31f5e50945e9e1d05013143</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-03 09:46:11</sys_updated_on>
+            <sys_updated_on>2025-02-17 12:09:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-17 12:09:56</sys_created_on>
+            <sys_id>c44c7c5dc3b75210945e9e1d050131bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_budget" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">e9600f57c31f5e50945e9e1d05013143</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-17 12:09:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_year</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-17 12:09:56</sys_created_on>
+            <sys_id>cc4c7c5dc3b75210945e9e1d050131bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1040502_wbs_budget" sys_domain="global" view="83504b57db1f5e5043031af713f64b79">e9600f57c31f5e50945e9e1d05013143</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-17 12:09:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

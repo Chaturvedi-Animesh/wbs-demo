@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Populate year choices</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+    var year = new Date().getFullYear();
+    for (var i = 0; i <= 10; i++) {
+        var choices = year + i;
+        g_form.addOption('u_year', choices, choices);
+    }
+
+    var currentMonth = new Date().getMonth();
+    var allMonths = {
+        0: 'u_january',
+        1: 'u_february',
+        2: 'u_march',
+        3: 'u_april',
+        4: 'u_may',
+        5: 'u_june',
+        6: 'u_july',
+        7: 'u_august',
+        8: 'u_september',
+        9: 'u_october',
+        10: 'u_november',
+        11: 'u_december'
+    }
+    for (var month in allMonths) {
+        if (parseInt(month) < currentMonth) {
+            g_form.setReadOnly(allMonths[month], true);
+        }
+    }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-14 03:34:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a579ef8cc3731a50945e9e1d050131b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Populate year choices</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
+        <sys_update_name>sys_script_client_a579ef8cc3731a50945e9e1d050131b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-17 08:17:03</sys_updated_on>
+        <table>x_1040502_wbs_budget</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
