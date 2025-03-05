@@ -4,30 +4,31 @@
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[ function onClick(g_form) {
-	
 
-	g_modal.showFields({
-        title: "",
-        fields: [{
-            type: 'textarea',
-            name: 'work_notes',
-            label: getMessage('Justification for Reason : '),
-            mandatory: true
-        }],
-        size: 'lg'
-		
-    }).then(function(fieldValues) {
-        var ga = new GlideAjax('createHistoryRecord');
-        ga.addParam('sysparm_name', 'wbsHistoryRecord');
-        ga.addParam('sysparm_wbs', g_form.getUniqueValue());
-        ga.addParam('sysparm_reason', fieldValues.updatedFields[0].value);
-		g_form.setValue('state',10);
-		g_form.submit('submit_record');
-        ga.getXMLAnswer(function(response) {});
-    });
-	
-}
-]]></client_script_v2>
+     if (g_form.isUserModified()) {
+         g_modal.showFields({
+             title: "",
+             fields: [{
+                 type: 'textarea',
+                 name: 'work_notes',
+                 label: getMessage('Justification for Reason : '),
+                 mandatory: true
+             }],
+             size: 'lg'
+
+         }).then(function(fieldValues) {
+             var ga = new GlideAjax('createHistoryRecord');
+             ga.addParam('sysparm_name', 'wbsHistoryRecord');
+             ga.addParam('sysparm_wbs', g_form.getUniqueValue());
+             ga.addParam('sysparm_reason', fieldValues.updatedFields[0].value);
+             g_form.setValue('state', 10);
+             g_form.submit('submit_record');
+             ga.getXMLAnswer(function(response) {});
+         });
+     }
+
+
+ }]]></client_script_v2>
         <comments/>
         <condition>!current.isNewRecord() &amp;&amp; current.canWrite() &amp;&amp; current.state == '10' &amp;&amp; new x_1040502_wbs.checkApprovalHistory().checkRecord(current.sys_id)</condition>
         <form_action>true</form_action>
@@ -62,6 +63,8 @@ if (typeof window == 'undefined')
 	updateWBS();
 
 function updateWBS(){
+	current.u_draft = true;
+	//gs.info('Save draft : '+current.u_draft);
 	current.state = 10;
 	current.update();
 }]]></script>
@@ -75,7 +78,7 @@ function updateWBS(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>777ee57dc3b31610945e9e1d050131b8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Save</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -83,9 +86,20 @@ function updateWBS(){
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_ui_action_777ee57dc3b31610945e9e1d050131b8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-19 05:06:25</sys_updated_on>
+        <sys_updated_on>2025-02-26 05:33:22</sys_updated_on>
         <table>x_1040502_wbs_wbs</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>777ee57dc3b31610945e9e1d050131b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-25 09:40:28</sys_created_on>
+        <sys_id>24c62d33c3339210945e9e1d050131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-25 09:40:28</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

@@ -28,6 +28,7 @@
                 <element inactive_on_update="false" label="Regional Expense" sequence="5" value="regional expense"/>
             </choice>
         </element>
+        <element label="Draft" max_length="40" name="u_draft" type="boolean"/>
         <element attributes="omit_sys_original=true" audit="true" label="February" max_length="20" name="u_february" type="currency"/>
         <element attributes="omit_sys_original=true" label="January" max_length="20" name="u_january" type="currency"/>
         <element attributes="omit_sys_original=true" label="July" max_length="20" name="u_july" type="currency"/>

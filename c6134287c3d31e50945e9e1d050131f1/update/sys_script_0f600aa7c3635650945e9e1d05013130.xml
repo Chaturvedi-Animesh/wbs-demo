@@ -30,6 +30,10 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	 g_scratchpad.reason = new x_1040502_wbs.checkApprovalHistory().checkRecord(current.sys_id);
+	 g_scratchpad.reasonChange = new x_1040502_wbs.checkApprovalHistory().checkHistoryRecord(current.sys_id);
+	 gs.info('change flag : '+g_scratchpad.reason  +' -- '+g_scratchpad.reasonChange )
+	 g_scratchpad.draft = current.u_draft;
+	// gs.info('draft BR '+g_scratchpad.draft)
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -38,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0f600aa7c3635650945e9e1d05013130</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Checking record exist or not in history</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -46,7 +50,7 @@
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_script_0f600aa7c3635650945e9e1d05013130</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-12 06:41:38</sys_updated_on>
+        <sys_updated_on>2025-02-26 05:33:33</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

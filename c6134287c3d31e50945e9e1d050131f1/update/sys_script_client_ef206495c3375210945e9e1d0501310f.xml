@@ -13,16 +13,21 @@
         <script><![CDATA[function onLoad() {
 
 	g_form.setDisplay('state',false);
-   if(g_form.getValue('state') == '-5' || g_form.getValue('state') == '8'){
+   if((g_form.getValue('state') == '-5' || g_form.getValue('state') == '8') && g_scratchpad.reasonChange == false){
 	g_form.showRelatedList('x_1040502_nsc_pe_0_approval_routing_preview');
 	g_form.showRelatedList('u_approval_history');
+	g_form.hideRelatedList('x_1040502_wbs_budget_history');
    }
 //    else{
 // 	g_form.hideRelatedList('x_1040502_nsc_pe_0_approval_routing_preview');
 // 	g_form.hideRelatedList('u_approval_history');
 // 	g_form.hideRelatedList('x_1040502_wbs_change_history');
 //    }
-   else if((g_form.getValue('state') == '8' && g_scratchpad.reason == true) || (g_form.getValue('state') == '10' && g_scratchpad.reason == true) || (g_form.getValue('state') == '-5' && g_scratchpad.reason == true)){
+   else if((g_form.getValue('state') == '8' && g_scratchpad.reason == true && g_scratchpad.reasonChange == false) || (g_form.getValue('state') == '10' && g_scratchpad.reason == true && g_scratchpad.reasonChange == false) || (g_form.getValue('state') == '-5' && g_scratchpad.reason == true && g_scratchpad.reasonChange == false)){
+	g_form.showRelatedList('u_approval_history');
+	g_form.hideRelatedList('x_1040502_wbs_budget_history');
+   }
+   else if((g_form.getValue('state') == '8' && g_scratchpad.reasonChange == true) || (g_form.getValue('state') == '10' && g_scratchpad.reasonChange == true) || (g_form.getValue('state') == '-5' && g_scratchpad.reasonChange == true)){
 	g_form.showRelatedList('u_approval_history');
 	g_form.showRelatedList('x_1040502_wbs_budget_history');
    }
@@ -41,7 +46,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ef206495c3375210945e9e1d0501310f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Hide related list</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -49,7 +54,7 @@
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_script_client_ef206495c3375210945e9e1d0501310f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-19 15:20:07</sys_updated_on>
+        <sys_updated_on>2025-02-26 05:57:21</sys_updated_on>
         <table>x_1040502_wbs_budget</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

@@ -38,12 +38,13 @@
                 var h = new GlideRecord('x_1040502_wbs_budget_history');
                 h.initialize();
                 h.month = current[field].getLabel();
-                h.budget = current.sys_id;
+                h.u_budget_number = current.sys_id;
                 h.old_value = previous[field];
-                h.new_value = current[field];
-				h.reason = current.u_reason.getJournalEntry(-1).match(/\n.*/gm).join("\n");
-				//h.reason = current.u_reason;
+                h.new_value = current[field]; 
+				//h.reason = current.u_reason.getJournalEntry(-1).match(/\n.*/gm).join("\n");
+				h.reason = current.u_reason;
                 h.insert();
+				
 
             }
         });
@@ -57,7 +58,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>04916059c3375210945e9e1d050131b0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Create History record</sys_name>
         <sys_overrides/>
         <sys_package display_value="WBS" source="x_1040502_wbs">c6134287c3d31e50945e9e1d050131f1</sys_package>
@@ -65,7 +66,7 @@
         <sys_scope display_value="WBS">c6134287c3d31e50945e9e1d050131f1</sys_scope>
         <sys_update_name>sys_script_04916059c3375210945e9e1d050131b0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-17 10:25:31</sys_updated_on>
+        <sys_updated_on>2025-02-26 08:27:29</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

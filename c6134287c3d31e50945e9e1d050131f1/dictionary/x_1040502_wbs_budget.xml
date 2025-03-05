@@ -24,6 +24,7 @@
         <element attributes="edge_encryption_enabled=true" label="Budget Estimates" max_length="40" name="u_budget" type="string"/>
         <element attributes="omit_sys_original=true" label="Budget Estimate" max_length="20" name="u_budget_estimate" type="currency"/>
         <element attributes="omit_sys_original=true" label="December" max_length="20" name="u_december" type="currency"/>
+        <element label="Draft" max_length="40" name="u_draft" type="boolean"/>
         <element attributes="omit_sys_original=true" label="February" max_length="20" name="u_february" type="currency"/>
         <element attributes="omit_sys_original=true" label="January" max_length="20" name="u_january" type="currency"/>
         <element attributes="omit_sys_original=true" label="July" max_length="20" name="u_july" type="currency"/>
